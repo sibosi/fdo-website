@@ -11,7 +11,16 @@ export const metadata: Metadata = {
     'Itt találod a Diákparlamenthez kapcsolódó fontos dokumentumokat, mint például az Alkotmányt, jegyzőkönyveket és egyéb hasznos anyagokat.',
 }
 
-const documents = [
+type Document = {
+  name: string
+  description: string
+  link: string
+  date: string
+  imageUrl: string
+  badge?: string
+}
+
+const documents: Document[] = [
   {
     name: 'Alkotmány',
     description: 'A Diákparlament működése',

@@ -7,7 +7,7 @@ import '@/styles/tailwind.css'
 export const metadata: Metadata = {
   title: {
     template: '%s - Fővárosi Diákönkormányzat',
-    default: 'Fővárosi Diákönkormányzat - ', // TODO: add subtitle
+    default: 'Fővárosi Diákönkormányzat',
   },
   description:
     'Fővárosi Diákönkormányzat - A Fővárosi Diákönkormányzat célja, hogy a diákok érdekeit képviselje és támogassa a diákéletet Budapesten.',
