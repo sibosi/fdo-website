@@ -59,7 +59,7 @@ const steps: StepType[] = [
     order: 4,
     title: 'Kapcsolatfelvétel a bizottságokhoz',
     description:
-      'Ha a kormány, etikai bizottság vagy a mentálhigiénés bizottság része lenni, akkor vedd fel a kapcsolatot velünk a fent kiemelt email címen és a jelenlegi helyzet alapján minden további információt elküldünk neked ezzel kapcsolatban.',
+      'Ha szeretnél a kormány, etikai bizottság vagy a mentálhigiénés bizottság része lenni, akkor vedd fel a kapcsolatot velünk a fent kiemelt email címen és a jelenlegi helyzet alapján minden további információt elküldünk neked ezzel kapcsolatban.',
   },
 ]
 
