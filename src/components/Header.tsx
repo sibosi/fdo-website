@@ -248,9 +248,9 @@ export function Header() {
               <DesktopNavigation className="pointer-events-auto hidden md:block" />
             </div>
 
-            {/* <div className="pointer-events-auto hidden items-center justify-end gap-2 rounded-full bg-white/90 p-0.5 px-3 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm md:flex dark:bg-zinc-800/90 dark:ring-white/10">
+            <div className="pointer-events-auto hidden items-center justify-end gap-2 rounded-full bg-white/90 p-0.5 px-3 shadow-lg ring-1 shadow-zinc-800/5 ring-zinc-900/5 backdrop-blur-sm md:flex dark:bg-zinc-800/90 dark:ring-white/10">
               <ThemeToggle />
-            </div> */}
+            </div>
           </div>
         </Container>
       </div>
