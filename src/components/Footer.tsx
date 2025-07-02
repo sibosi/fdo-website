@@ -15,7 +15,7 @@ function NavLink({
   return (
     <Link
       href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
+      className="transition hover:text-red-500 dark:hover:text-red-400"
     >
       {children}
     </Link>
@@ -47,12 +47,25 @@ export function Footer() {
               <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
                 <NavLink href="/rolunk">Rólunk</NavLink>
                 <NavLink href="/diakparlamentek">Diákparlamentek</NavLink>
+                <NavLink href="/dokumentumok">Dokumentumok</NavLink>
                 <NavLink href="/archivum">Archívum</NavLink>
                 <NavLink href="/csatlakozz">Csatlakozz</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                Készítette: <a className='hover:text-zinc-200' href={urls[order[0]]}>{order[0]}</a> és{' '}
-                <a className='hover:text-zinc-200' href={urls[order[1]]}>{order[1]}</a>
+                Készítette:{' '}
+                <a
+                  className="hover:text-zinc-700 hover:dark:text-zinc-200"
+                  href={urls[order[0]]}
+                >
+                  {order[0]}
+                </a>{' '}
+                és{' '}
+                <a
+                  className="hover:text-zinc-700 hover:dark:text-zinc-200"
+                  href={urls[order[1]]}
+                >
+                  {order[1]}
+                </a>
               </p>
             </div>
           </ContainerInner>

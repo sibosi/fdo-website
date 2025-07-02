@@ -4,8 +4,8 @@ import { SimpleLayout } from '@/components/SimpleLayout'
 
 export const metadata: Metadata = {
   title: 'Archívum',
-  description: '',
-} // TODO: add description
+  description: 'Fejlesztés alatt...',
+}
 
 export default function Csatlakozz() {
   return (

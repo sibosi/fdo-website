@@ -12,7 +12,7 @@ export async function GET(req: Request) {
 
   let author = {
     name: 'Fővárosi Diákparlament',
-    email: '', // TODO: add email
+    email: 'fovarosidiakonkormanyzat@gmail.com',
   }
 
   let feed = new Feed({
