@@ -1,11 +1,34 @@
 import { type Metadata } from 'next'
 
 import { SimpleLayout } from '@/components/SimpleLayout'
+import { PhoneIcon, MailIcon, ArrowRight } from 'lucide-react'
+import logo from '@/images/logo.png'
+import * as motion from 'motion/react-client'
 
 export const metadata: Metadata = {
   title: 'Dokumentumok',
-  description: '',
-} // TODO: add description
+  description:
+    'Itt találod a Diákparlamenthez kapcsolódó fontos dokumentumokat, mint például az Alkotmányt, jegyzőkönyveket és egyéb hasznos anyagokat.',
+}
+
+const documents = [
+  {
+    name: 'Alkotmány',
+    description: 'A Diákparlament működése',
+    // badge: 'Új',
+    link: 'https://docs.google.com/document/d/1-2eHgpI7nVs8DtpH6fb4GUDFbAV_dGqo/edit?usp=drive_link',
+    date: '2024/07/02',
+    imageUrl: logo.src,
+  },
+  {
+    name: 'Házszabály',
+    description: 'A gyűlési szabályzat',
+    // badge: 'Új',
+    link: 'https://docs.google.com/document/d/1RJGvh2J1BdNGvzLp0N2IqI1F39co4lCceNZ6uUTjezU/edit?usp=drive_link',
+    date: '2024/07/02',
+    imageUrl: logo.src,
+  },
+]
 
 export default function Dokumentumok() {
   return (
@@ -13,138 +36,59 @@ export default function Dokumentumok() {
       title="Dokumentumok"
       intro="Itt találod a Diákparlamenthez kapcsolódó fontos dokumentumokat, mint például az Alkotmányt, jegyzőkönyveket és egyéb hasznos anyagokat."
     >
-      <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:mt-16 lg:grid-cols-6 lg:grid-rows-2">
-          <div className="relative lg:col-span-3">
-            <div className="absolute inset-px rounded-lg bg-zinc-100 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)] lg:rounded-tl-[calc(2rem+1px)]">
-              <img
-                alt=""
-                src="https://res.cloudinary.com/dqi8dotxx/image/upload/v1749805780/alkotmany_jz5l2z.png"
-                className="h-80 bg-white object-cover object-left"
-              />
-              <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-red-600">
-                  Állandó
-                </h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-zinc-800 dark:text-zinc-100">
-                  Alkotmány
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-zinc-600 dark:text-zinc-400">
-                  A Diákparlament Alkotmánya határozza meg a szervezet működését
-                  és céljait. Itt találod az aktuális verzióját.
-                </p>
-                <a
-                  href="https://docs.google.com/document/d/1-2eHgpI7nVs8DtpH6fb4GUDFbAV_dGqo/edit?usp=drive_link&ouid=105407767835958044628&rtpof=true&sd=true"
-                  className="text-sm/4 text-red-500 hover:underline"
-                >
-                  Megnézem
-                </a>
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-t-4xl lg:rounded-tl-4xl" />
-          </div>
-          <div className="relative lg:col-span-3">
-            <div className="absolute inset-px rounded-lg bg-zinc-100 lg:rounded-tr-4xl" />
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-tr-[calc(2rem+1px)]">
-              <img
-                alt=""
-                src="https://res.cloudinary.com/dqi8dotxx/image/upload/v1749806242/hazszabaly_iohieo.png"
-                className="h-80 object-cover object-left lg:object-right"
-              />
-              <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-red-600">
-                  Állandó
-                </h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-zinc-800">
-                  Házszabály
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-zinc-600">
-                  A Diákparlament Házszabálya szabályozza a gyűlések menetét és
-                  a döntéshozatali folyamatokat. Itt találod az aktuális
-                  verzióját.
-                </p>
-                <a
-                  href="https://docs.google.com/document/d/1RJGvh2J1BdNGvzLp0N2IqI1F39co4lCceNZ6uUTjezU/edit?usp=drive_link"
-                  className="text-sm/4 text-red-500 hover:underline"
-                >
-                  Megnézem
-                </a>
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-tr-4xl" />
-          </div>
-          <div className="relative lg:col-span-2">
-            <div className="absolute inset-px rounded-lg bg-white lg:rounded-bl-4xl" />
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] lg:rounded-bl-[calc(2rem+1px)]">
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-speed.png"
-                className="h-80 object-cover object-left"
-              />
-              <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-indigo-600">
-                  Speed
-                </h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Built for power users
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Sed congue eros non finibus molestie. Vestibulum euismod
-                  augue.
+      <motion.ul
+        role="list"
+        className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3"
+      >
+        {documents.map((doc) => (
+          <motion.li
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            key={doc.name}
+            className="col-span-1 divide-y divide-zinc-200 rounded-lg border border-zinc-200 dark:divide-zinc-700 dark:border-zinc-700"
+          >
+            <div className="flex w-full items-center justify-between space-x-6 p-6">
+              <div className="flex-1 truncate">
+                <div className="flex items-center space-x-3">
+                  <h3 className="text truncate font-medium text-zinc-800 dark:text-zinc-100">
+                    {doc.name}
+                  </h3>
+                  {doc.badge && (
+                    <span className="inline-flex shrink-0 items-center rounded-full bg-red-50 px-1.5 py-0.5 text-xs font-medium text-red-500 ring-1 ring-red-600/20 ring-inset">
+                      {doc.badge}
+                    </span>
+                  )}
+                </div>
+                <p className="mt-1 truncate text-sm text-zinc-600 dark:text-zinc-400">
+                  {doc.description}
                 </p>
               </div>
+              <img alt="" src={doc.imageUrl} className="size-10 shrink-0" />
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 lg:rounded-bl-4xl" />
-          </div>
-          <div className="relative lg:col-span-2">
-            <div className="absolute inset-px rounded-lg bg-white" />
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)]">
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-integrations.png"
-                className="h-80 object-cover"
-              />
-              <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-indigo-600">
-                  Integrations
-                </h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Connect your favorite tools
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Maecenas at augue sed elit dictum vulputate, in nisi aliquam
-                  maximus arcu.
-                </p>
+            <div>
+              <div className="-mt-px flex divide-x divide-zinc-200 dark:divide-zinc-700">
+                <div className="flex w-0 flex-1">
+                  <span className="relative -mr-px inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-bl-lg border border-transparent py-4 text-sm text-zinc-700 dark:text-zinc-200">
+                    {doc.date}
+                  </span>
+                </div>
+                <div className="-ml-px flex w-0 flex-1">
+                  <a
+                    href={doc.link}
+                    target="_blank"
+                    className="relative inline-flex w-0 flex-1 items-center justify-center gap-x-3 rounded-br-lg border border-transparent py-4 text-sm font-semibold text-zinc-700 dark:text-zinc-200"
+                  >
+                    Megnézem
+                    <ArrowRight aria-hidden="true" className="size-5" />
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5" />
-          </div>
-          <div className="relative lg:col-span-2">
-            <div className="absolute inset-px rounded-lg bg-white max-lg:rounded-b-4xl lg:rounded-br-4xl" />
-            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-b-[calc(2rem+1px)] lg:rounded-br-[calc(2rem+1px)]">
-              <img
-                alt=""
-                src="https://tailwindcss.com/plus-assets/img/component-images/bento-01-network.png"
-                className="h-80 object-cover"
-              />
-              <div className="p-10 pt-4">
-                <h3 className="text-sm/4 font-semibold text-indigo-600">
-                  Network
-                </h3>
-                <p className="mt-2 text-lg font-medium tracking-tight text-gray-950">
-                  Globally distributed CDN
-                </p>
-                <p className="mt-2 max-w-lg text-sm/6 text-gray-600">
-                  Aenean vulputate justo commodo auctor vehicula in malesuada
-                  semper.
-                </p>
-              </div>
-            </div>
-            <div className="pointer-events-none absolute inset-px rounded-lg shadow-sm ring-1 ring-black/5 max-lg:rounded-b-4xl lg:rounded-br-4xl" />
-          </div>
-        </div>
-      </div>
+          </motion.li>
+        ))}
+      </motion.ul>
     </SimpleLayout>
   )
 }
