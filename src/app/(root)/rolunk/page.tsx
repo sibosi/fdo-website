@@ -19,6 +19,7 @@ import hejar from '@/images/people/hejar.jpg'
 import kappeter from '@/images/people/kappeter.jpg'
 import luca from '@/images/people/luca.jpg'
 import panna from '@/images/people/panna.jpg'
+import placeholder from '@/images/people/PLACEHOLDER.png'
 
 export const metadata: Metadata = {
   title: 'Rólunk',
@@ -45,13 +46,13 @@ const people = [
     phone: '+36203424996',
   },
   {
-    name: 'Tóth-Maros Ádám',
+    name: 'Bagyinszki Luca',
     role: 'Alelnök',
-    imageUrl: adam.src,
-    bio: 'Tóth-Maros Ádám vagyok, a Budapesti Fazekas Mihály Gimnázium tanulója és a Fővárosi Diákönkormányzat alelnöke. A második ciklusomat töltöm az FDÖ-ben, első ciklusom alatt kormánytag voltam. Az én kezem alatt indult el a Mentálhigiénés Javaslatcsomag projektje, ami jelenleg is aktívan fut. Szívügyemnek tartom a diákok jólétét, mindennapos mosolygását, és célom, hogy tanulmányaim végéig a diákokért dolgozzam.',
+    imageUrl: luca.src,
+    bio: 'Bagyinszki Luca vagyok, a Madách Imre Gimnázium egyik diákpolgármestere, és a Fővárosi Diákönkormányzat alelnöke. DÖK-ös munkám során számos sikeres iskolai kezdeményezésben vettem részt, az ilyen projektek alatt szerzett tapasztalataimat pedig szeretném hasznosítani nagyobb, az összes budapesti diák számára hasznos és előnyös programokban is. Célom az iskolák közötti kapcsolatok erősítése, hogy együtt egy aktívabb, nyitottabb és szervezettebb budapesti diákéletet alakíthassunk ki.',
     divider: true,
-    email: 'tothmarosadam.fdo@gmail.com',
-    phone: '+36706074212',
+    email: '', // TODO
+    phone: '', // TODO
   },
 
   // -------- újonnan hozzáadott tagok --------
@@ -73,12 +74,6 @@ const people = [
     role: 'Social media',
     imageUrl: nelli.src,
     bio: 'Szentpéteri Kornélia vagyok, a Xántus János Két Tanítási Nyelvű Gimnázium diákönkormányzatának alelnöke. Én vagyok felelős a közösségi oldalak igazgatásáért, és az online kapcsolattartó szerepért. A célom, hogy minden platformon el tudjatok érni minket.',
-  },
-  {
-    name: 'Bagyinszki Luca',
-    role: 'Social media',
-    imageUrl: luca.src,
-    bio: 'Bagyinszki Luca vagyok, a Madách Imre Gimnázium egyik diákpolgármestere. Szenvedélyem a szervezés, feladatom a kormány segítése és támogatása. Célom a budapesti diákközösség építése valamint az iskolák közötti kapcsolatok kiterjesztése és fejlesztése.',
   },
   {
     name: 'Nkanyimuo Bruno',
@@ -106,15 +101,21 @@ const people = [
   },
   {
     name: 'Tomka-Babucs Panna',
-    role: 'Választási bizottság elnöke',
+    role: 'Kormánytag',
     imageUrl: panna.src,
-    bio: 'Tomka-Babucs Panna vagyok a Választási bizottság elnöke, és a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola diákelnöke is. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
+    bio: 'Tomka-Babucs Panna vagyok a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola tanulója és diákelnöke. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
   },
   {
-    name: 'Hejar Korkut',
-    role: 'Etikai bizottság elnöke',
-    imageUrl: hejar.src,
-    bio: 'Korkut Hejar vagyok, a 18. Kerületi Vörösmarty Mihály Ének-Zenei Nyelvi Ált. Iskola és Gimnázium DÖK elnöke. Az én feladatom az alapdokumentumok védelme, célom a magyar diákság helyzetének jobbá tétele.',
+    name: 'Antal Jázmin',
+    role: 'Etikai Bizottság Elnöke',
+    imageUrl: placeholder.src, // TODO
+    bio: '', // TODO
+  },
+  {
+    name: 'Szarka Áron',
+    role: 'Választási Bizottság Elnöke',
+    imageUrl: placeholder.src, // TODO
+    bio: '', // TODO
   },
 ]
 // TODO: add bogi, amikor megszavazzák
