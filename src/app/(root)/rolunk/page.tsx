@@ -17,7 +17,7 @@ import nelli from '@/images/people/nelli.jpg'
 import dani from '@/images/people/dani.jpg'
 import hejar from '@/images/people/hejar.jpg'
 import kappeter from '@/images/people/kappeter.jpg'
-import luca from '@/images/people/luca.jpg'
+import luca from '@/images/people/luca.png'
 import panna from '@/images/people/panna.jpg'
 import placeholder from '@/images/people/PLACEHOLDER.png'
 
@@ -51,8 +51,6 @@ const people = [
     imageUrl: luca.src,
     bio: 'Bagyinszki Luca vagyok, a Madách Imre Gimnázium egyik diákpolgármestere, és a Fővárosi Diákönkormányzat alelnöke. DÖK-ös munkám során számos sikeres iskolai kezdeményezésben vettem részt, az ilyen projektek alatt szerzett tapasztalataimat pedig szeretném hasznosítani nagyobb, az összes budapesti diák számára hasznos és előnyös programokban is. Célom az iskolák közötti kapcsolatok erősítése, hogy együtt egy aktívabb, nyitottabb és szervezettebb budapesti diákéletet alakíthassunk ki.',
     divider: true,
-    email: '', // TODO
-    phone: '', // TODO
   },
 
   // -------- újonnan hozzáadott tagok --------

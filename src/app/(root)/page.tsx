@@ -15,6 +15,10 @@ import { formatDate } from '@/lib/formatDate'
 import postImage1 from '@/images/photos/post1.png'
 import postImage2 from '@/images/photos/post2.png'
 import postImage3 from '@/images/photos/post3.png'
+import postImage4 from '@/images/photos/post4.jpg'
+import postImage5 from '@/images/photos/post5.jpg'
+import postImage6 from '@/images/photos/post6.jpg'
+import postImage7 from '@/images/photos/post7.jpg'
 import { Mail, Facebook, Instagram, Linkedin, ArrowRight } from 'lucide-react'
 
 function Article({ article }: { article: ArticleWithSlug }) {
@@ -58,6 +62,52 @@ function Photos() {
     </div>
   )
 }
+
+// Instagram post data dictionary and types
+interface InstagramPost {
+  href: string
+  src: any
+  alt: string
+}
+
+//   {
+//    href: 'https://www.instagram.com/p/DP_EbNDjd88/',
+//    src: postImage7,
+//    alt: '10.17. Diákparlament',
+//  },
+
+const instagramPosts: InstagramPost[] = [
+  {
+    href: 'https://www.instagram.com/p/DPBECiAjf5j/',
+    src: postImage6,
+    alt: 'Elindult az FDÖ 2. Mentálhigéniás felmérése',
+  },
+  {
+    href: 'https://www.instagram.com/p/DN0u91I2rGY/',
+    src: postImage5,
+    alt: 'Találkozz velünk a Diákszigeten',
+  },
+  {
+    href: 'https://www.instagram.com/p/DMVQI6MttU7/',
+    src: postImage4,
+    alt: 'Elkészült a weboldal',
+  },
+  {
+    href: 'https://www.instagram.com/p/DKuxmSpNGeb/',
+    src: postImage1,
+    alt: 'Efott kedvezmény',
+  },
+  {
+    href: 'https://www.instagram.com/p/DJUj3kLNunn/',
+    src: postImage2,
+    alt: 'Elkezdődött a munka',
+  },
+  {
+    href: 'https://www.instagram.com/p/DKpnsUuNuAP',
+    src: postImage3,
+    alt: 'Elfogadták a mentálhigéniás programot',
+  },
+]
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -106,63 +156,22 @@ export default async function Home() {
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
             <div className="grid grid-cols-2 gap-4">
-              <div className="group relative">
-                <Link
-                  href="https://www.instagram.com/p/DKuxmSpNGeb/"
-                  target="_blank"
-                  className="block"
-                >
-                  {/* Image */}
-                  <Image
-                    src={postImage1}
-                    alt="Efott kedvezmény"
-                    className="border border-zinc-100 transition-opacity duration-200 group-hover:opacity-50 dark:border-zinc-700/40"
-                  />
-
-                  {/* Hover overlay */}
-                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-neutral-900/40 font-medium text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                    Megnézem <ArrowRight />
-                  </span>
-                </Link>
-              </div>
-              <div className="group relative">
-                <Link
-                  href="https://www.instagram.com/p/DJUj3kLNunn/"
-                  target="_blank"
-                  className="block"
-                >
-                  {/* Image */}
-                  <Image
-                    src={postImage2}
-                    alt="Elkezdődött a munka"
-                    className="border border-zinc-100 transition-opacity duration-200 group-hover:opacity-50 dark:border-zinc-700/40"
-                  />
-
-                  {/* Hover overlay */}
-                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-neutral-900/40 font-medium text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                    Megnézem <ArrowRight />
-                  </span>
-                </Link>
-              </div>
-              <div className="group relative">
-                <Link
-                  href="https://www.instagram.com/p/DKpnsUuNuAP"
-                  target="_blank"
-                  className="block"
-                >
-                  {/* Image */}
-                  <Image
-                    src={postImage3}
-                    alt="Elfogadták a mentálhigéniás programot"
-                    className="border border-zinc-100 transition-opacity duration-200 group-hover:opacity-50 dark:border-zinc-700/40"
-                  />
-
-                  {/* Hover overlay */}
-                  <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-neutral-900/40 font-medium text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
-                    Megnézem <ArrowRight />
-                  </span>
-                </Link>
-              </div>
+              {instagramPosts.map((post: InstagramPost, idx: number) => (
+                <div className="group relative" key={post.href}>
+                  <Link href={post.href} target="_blank" className="block">
+                    {/* Image */}
+                    <Image
+                      src={post.src}
+                      alt={post.alt}
+                      className="border border-zinc-100 transition-opacity duration-200 group-hover:opacity-50 dark:border-zinc-700/40"
+                    />
+                    {/* Hover overlay */}
+                    <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-neutral-900/40 font-medium text-white opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+                      Megnézem <ArrowRight />
+                    </span>
+                  </Link>
+                </div>
+              ))}
             </div>
           </div>
         </div>
