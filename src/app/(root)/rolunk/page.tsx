@@ -20,6 +20,7 @@ import kappeter from '@/images/people/kappeter.jpg'
 import luca from '@/images/people/luca.png'
 import panna from '@/images/people/panna.jpg'
 import placeholder from '@/images/people/PLACEHOLDER.png'
+import jazmin from '@/images/people/jazmin.jpg'
 
 export const metadata: Metadata = {
   title: 'Rólunk',
@@ -106,8 +107,8 @@ const people = [
   {
     name: 'Antal Jázmin',
     role: 'Etikai Bizottság Elnöke',
-    imageUrl: placeholder.src, // TODO
-    bio: '', // TODO
+    imageUrl: jazmin.src,
+    bio: 'Elnökként az a célom, hogy az FDÖ mindig az átláthatóságra, az őszinteségre és a közösség iránti felelősségvállalásra épüljön. Hiszek abban, hogy az oktatás fejlesztéséhez nemcsak szakmai tudás, hanem etikus gondolkodás és együttműködés is kell. Az én feladatom, hogy erre minden helyzetben figyeljek, és segítsem a szervezetet abban, hogy hiteles és megbízható maradjon.',
   },
   {
     name: 'Szarka Áron',
