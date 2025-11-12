@@ -21,7 +21,7 @@ import luca from '@/images/people/luca.png'
 import panna from '@/images/people/panna.jpg'
 import placeholder from '@/images/people/PLACEHOLDER.png'
 import jazmin from '@/images/people/jazmin.jpg'
-import szaron from '@/images/people/szaron.jpg'
+import szaron from '@/images/people/szaron.png'
 
 export const metadata: Metadata = {
   title: 'Rólunk',
