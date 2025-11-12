@@ -20,6 +20,8 @@ import kappeter from '@/images/people/kappeter.jpg'
 import luca from '@/images/people/luca.png'
 import panna from '@/images/people/panna.jpg'
 import placeholder from '@/images/people/PLACEHOLDER.png'
+import jazmin from '@/images/people/jazmin.jpg'
+import szaron from '@/images/people/szaron.jpg'
 
 export const metadata: Metadata = {
   title: 'Rólunk',
@@ -106,14 +108,14 @@ const people = [
   {
     name: 'Antal Jázmin',
     role: 'Etikai Bizottság Elnöke',
-    imageUrl: placeholder.src, // TODO
-    bio: '', // TODO
+    imageUrl: jazmin.src,
+    bio: 'Elnökként az a célom, hogy az FDÖ mindig az átláthatóságra, az őszinteségre és a közösség iránti felelősségvállalásra épüljön. Hiszek abban, hogy az oktatás fejlesztéséhez nemcsak szakmai tudás, hanem etikus gondolkodás és együttműködés is kell. Az én feladatom, hogy erre minden helyzetben figyeljek, és segítsem a szervezetet abban, hogy hiteles és megbízható maradjon.',
   },
   {
     name: 'Szarka Áron',
     role: 'Választási Bizottság Elnöke',
-    imageUrl: placeholder.src, // TODO
-    bio: '', // TODO
+    imageUrl: szaron.src,
+    bio: 'Szarka Áron vagyok az ELTE Radnótiból. Számomra az életben a legfontosabb érték a szabadság. Azt remélem, hogy ha igazságos, demokratikus választásokat szervezünk, az példát mutat a fiataloknak, és elülteti bennük az igényt a saját szabadságuk megteremtésére. A szabadság ugyanis elsősorban társadalmi hozzáállás kérdése. Ez motivál a választási bizottság elnökeként.',
   },
 ]
 // TODO: add bogi, amikor megszavazzák
