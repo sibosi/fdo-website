@@ -8,7 +8,7 @@ import * as motion from 'motion/react-client'
 export const metadata: Metadata = {
   title: 'Dokumentumok',
   description:
-    'Itt találod a Diákparlamenthez kapcsolódó fontos dokumentumokat, mint például az Alkotmányt, jegyzőkönyveket és egyéb hasznos anyagokat.',
+    'Itt találod a Diákparlamenthez kapcsolódó fontos dokumentumokat, mint például az Alkotmányt vagy a jegyzőkönyveket.',
 }
 
 type Document = {
