@@ -26,7 +26,7 @@ import szaron from '@/images/people/szaron.png'
 export const metadata: Metadata = {
   title: 'Rólunk',
   description:
-    'Ismertétek meg elhivatott csapatunkat, akik a budapesti diákok érdekeit képviselik.',
+    'Ismerjétek meg elhivatott csapatunkat, akik a budapesti diákok érdekeit képviselik.',
 }
 
 const people = [
