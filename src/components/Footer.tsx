@@ -34,7 +34,7 @@ export function Footer() {
   }, [])
 
   const urls: Record<string, string> = {
-    'Nagy Ábel': 'https://www.linkedin.com/in/abel-nagy26/',
+    'Nagy Ábel': 'https://www.linkedin.com/in/abelanagy/',
     'Simon Nimród': 'https://www.linkedin.com/in/nimr%C3%B3d-simon-a1369b34a/',
   }
 

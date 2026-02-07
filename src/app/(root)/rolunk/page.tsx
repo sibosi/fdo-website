@@ -99,12 +99,12 @@ const people = [
     imageUrl: dani.src,
     bio: 'Kiss Dániel vagyok, a Xántus János Két Tanítási Nyelvű Gimnázium 11. évfolyamos tanulója és a Diákönkormányzat elnöke. Fontosnak tartom, hogy a diákoknak legyen hangjuk, és aktívan részt vehessenek az iskolai döntéshozatalban. Az FDÖ-n belül is azért dolgozom, hogy ez a szemlélet város szinten is érvényesüljön.',
   },
-  {
-    name: 'Tomka-Babucs Panna',
-    role: 'Kormánytag',
-    imageUrl: panna.src,
-    bio: 'Tomka-Babucs Panna vagyok a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola tanulója és diákelnöke. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
-  },
+  // {
+  //   name: 'Tomka-Babucs Panna',
+  //   role: 'Kormánytag',
+  //   imageUrl: panna.src,
+  //   bio: 'Tomka-Babucs Panna vagyok a Kodály Zoltán Ének-zenei Általános Iskola, Gimnázium és Zenei Alapfokú Művészeti Iskola tanulója és diákelnöke. Hiszek abban, hogy dinamikus együttműködéssel képesek leszünk javítani a magyar oktatási rendszeren.',
+  // },
   {
     name: 'Antal Jázmin',
     role: 'Etikai Bizottság Elnöke',
